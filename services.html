@@ -1,143 +1,141 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <link rel="stylesheet" href="style.css">
+    <!-- Created by Rizowan Ahmed Safi -->
+    <!-- website - www.rizowanahmedsafi.com  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Service Section - Rizowan Ahmed Safi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<a href="https://docs.google.com/forms/d/1nG0HvONGIFm0E_orYUjHcK-lTufSyGatrLJRGBGkX44/edit?usp=sharing" target="_blank">
-  <div class="pricing-table">
-    <div class="pricing-card">
-      <h3 class="pricing-card-header">Gaming</h3>
-      <div class="price"><span>Gaming Videos|Skwidz</span></div>
-      <ul>
-        <li>Starting around $60 to $120, you may have your gaming videos edited in whatever way you choose.</li>
-        
-      </ul>
-      
-    </div></a>
-<a href="https://docs.google.com/forms/d/1ke2MMd33HQQRJm0JbmFYlXqxm9NTnZ1EcTSBmSomhcg/edit?usp=sharing"target="_blank">
-    <div class="pricing-card">
-      <h3 class="pricing-card-header">Reaction Videos</h3>
-      <div class="price"><span>reaction videos|Skwidz</span></div>
-      <ul>
-        <li>Starting around $60 to $120, you may have your Reacting videos edited in whatever way you choose.</li>
-        
-      </ul>
-      
-    </div></a>
-<a href="https://docs.google.com/forms/d/1pI6Zsn5LcmQU7jaD9V8Fr50oL9AWrnl43pA4ORWAvjc/edit?usp=sharing"target="_blank">
-    <div class="pricing-card">
-      <h3 class="pricing-card-header">Vlogs</h3>
-      <div class="price"><span>Vlogs|Skwidz</span></div>
-      <ul>
-        <li> Starting around $60 to $120, you may have your Vlogs edited in whatever way you choose.</li>
-        
-        
-      </ul>
-      
-    </div></a>
-
-
-  <style type="text/css">
-    *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans",sans-serif;
-  text-decoration: none;
-  list-style: none;
+<body>
+    <div class="services">
+        <div class="max-width">
+            <h1>Our Services</h1>
+            <div class="content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-paint-brush"></i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus incidunt labore debitis ea repudiandae numquam.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-code"></i>
+                        <h3>Grapics Design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus incidunt labore debitis ea repudiandae numquam.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-mobile"></i>
+                        <h3>App Development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus incidunt labore debitis ea repudiandae numquam.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-line-chart"></i>
+                        <h3>Advertising</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus incidunt labore debitis ea repudiandae numquam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 body{
-  background-color: #30336b;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+    background: #111;
+    color: #fff;
+}
+.services{
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 45px;
+    margin: auto;
+}
+.max-width h1{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    /* font-family: sans-serif; */
+}
+.max-width h1::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 170px;
+    background: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    user-select: none;
+    width: calc(26% - 20px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    background: #dc143c;
+}
+.box{
+    transition: all 0.3s ease;
+}
+.card:hover .box{
+    transform: scale(1.05);
+}
+.box i{
+    font-size: 50px;
+    color: #dc143c;
+    transition: color 0.3s ease;
+}
+.card:hover .box i{
+    color: #fff;
+}
+.box h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px;
+}
+@media screen and (max-width: 1190px) {
+    .max-width{
+        padding: 0 25px;
+    }
+    .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
-.pricing-table{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: min(1600px, 100%);
-  margin: auto;
+@media screen and (max-width: 700px){
+    .card{
+        width: 100%;
+    }
 }
-
-.pricing-card{
-  flex: 1;
-  max-width: 360px;
-  background-color: #fff;
-  margin: 20px 10px;
-  text-align: center;
-  cursor: pointer;
-  overflow: hidden;
-  color: #2d2d2d;
-  transition: .6s linear;
-}
-
-.pricing-card-header{
-  background-color: #0fbcf9;
-  display: inline-block;
-  color: #ffff00;
-  padding: 12px 30px;
-  border-radius: 0 0 20px 20px;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: .4s linear;
-}
-
-.pricing-card:hover .pricing-card-header{
-  box-shadow: 0 0 0 26em #26fffb;
-}
-
-.price{
-  font-size: 70px;
-  color: #0fbcf9;
-  margin: 40px 0;
-  transition: .2s linear;
-}
-
-.price sup, .price span{
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.pricing-card:hover ,.pricing-card:hover .price{
-  color: #fff;
-}
-
-.pricing-card li{
-  font-size: 16px;
-  padding: 10px 0;
-  text-transform: uppercase;
-}
-
-.order-btn{
-  display: inline-block;
-  margin-bottom: 40px;
-  margin-top: 80px;
-  border: 2px solid #0fbcf9;
-  color: #0fbcf9;
-  padding: 18px 40px;
-  border-radius: 8px;
-  text-transform: uppercase;
-  font-weight: 500;
-  transition: .3s linear;
-}
-
-.order-btn:hover{
-  background-color: #0fbcf9;
-  color: #fff;
-}
-
-@media screen and (max-width:1100px){
-  .pricing-card{
-    flex: 50%;
-  }
-}
-  </style>
+    </style>
 </body>
 </html>
